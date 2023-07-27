@@ -149,133 +149,142 @@ cardiovascular diseases.
 							<section id="cta" class="main special">
 								<header class="major">
 									<h1>FAQ</h1>
-									<html>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML and CSS Slideshow</title>
-    <style>
-    body {
-        font-family: Helvetica, sans-serif;
-        padding: 5%;
-        text-align: center;
-        font-size: 50;
-    }
-     
-    /* Styling the area of the slides */
-     
-    #slideshow {
-        overflow: hidden;
-        height: 510px;
-        width: 728px;
-        margin: 0 auto;
-    }
-     
-    /* Style each of the sides
-    with a fixed width and height */
-     
-    .slide {
-        float: left;
-        height: 510px;
-        width: 728px;
-    }
-     
-    /* Add animation to the slides */
-     
-    .slide-wrapper {
-         
-        /* Calculate the total width on the
-      basis of number of slides */
-        width: calc(728px * 4);
-         
-        /* Specify the animation with the
-      duration and speed */
-        animation: slide 50s ease infinite;
-    }
-     
-    /* Set the background color
-    of each of the slides */
-     
-    .slide:nth-child(1) {
-        background: green;
-    }
-     
-    .slide:nth-child(2) {
-        background: pink;
-    }
-     
-    .slide:nth-child(3) {
-        background: red;
-    }
-     
-    .slide:nth-child(4) {
-        background: yellow;
-    }
-     
-    /* Define the animation
-    for the slideshow */
-     
-    @keyframes slide {
-         
-        /* Calculate the margin-left for
-      each of the slides */
-        20% {
-            margin-left: 0px;
-        }
-        40% {
-            margin-left: calc(-728px * 1);
-        }
-        60% {
-            margin-left: calc(-728px * 2);
-        }
-        80% {
-            margin-left: calc(-728px * 3);
-        }
-    }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+   body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+   h1 {
+      text-align: center;
+   }
+   * {
+      box-sizing: border-box;
+   }
+   .Slide {
+      display: none;
+   }
+   img {
+      vertical-align: middle;
+      width: 100%;
+      height: 400px;
+   }
+   .slideContainer {
+      max-width: 600px;
+      margin: 10px;
+      position: relative;
+      margin: auto;
+   }
+   .prevBtn, .nextBtn {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 10px;
+      background-color: rgb(255, 255, 75);
+      color: rgb(50, 0, 116);
+      font-weight: bolder;
+      font-size: 18px;
+   }
+   .nextBtn {
+      right: -40px;
+   }
+   .prevBtn {
+      left: -40px;
+   }
+   .Caption {
+      color: #500070;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 25px;
+      padding: 8px 12px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+   }
+   .Navdot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(54, 5, 117);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      display: inline-block;
+      margin-top: 30px;
+   }
+   .selected, .Navdot:hover {
+      background-color: #d9ff00;
+   }
+   @media only screen and (max-width: 450px) {
+      .prevBtn, .nextBtn, .Caption {
+         font-size: 16px;
+      }
+   }
+</style>
 </head>
- 
 <body>
-     
-    <!-- Define the slideshow container -->
-    <div id="slideshow">
-        <div class="slide-wrapper">
-             
-            <!-- Define each of the slides
-         and write the content -->
-            <div class="slide">
-                <h1 class="slide-number">
-                    What are the guarantees?
-                </h1>
-		                    <h2>
-                    Since the project is not a start-up, some enterprises are already making a profit, and the total investment in the project is more than 6.000.000 dollars. Thus with its value today standing at 25.000.000 dollars, we are ready to be a guarantor of the safety of your crypto project investments.</h2>
-
- 
-
-<h2>Based on the fact that the beekeeping cycle is one calendar year, and all funds received and invested in the industrial apiary project will be immediately used, they will be automatically frozen by the project in property, bees, technological solutions, or marketing projects. At the end of one full cycle from the moment of the investment infusion, finances can be set free by the project. So the funds can be freely disposed of again.</h2>
-
- 
-
-<h2>Thus, we guarantee our investors an ROI in our token of 110% within 18 months from the date of purchase, relying on its value at the time of acquisition. It is the unique connection between the crypto project and the project in the economy sector that allows us to secure your investments. That can be compared with the provision of currencies in the past with the state’s gold reserves, which practically excluded any possible force majeure that could lead to the loss of your finances.</h2>
-                </h2>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    A computer science portal
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    This is an example of
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Slideshow with HTML and CSS only
-                </h1>
-            </div>
-        </div>
-    </div>
+<h1>Quote slideShow</h1>
+<hr />
+<div class="slideContainer">
+<div class="Slide">
+<h1>"The way to get started is to quit talking and begin doing."</h1>
+<div class="Caption">- Walt Disney</div>
+</div>
+<div class="Slide">
+<h1>
+"If life were predictable it would cease to be life, and be without flavor."
+</h1>
+<div class="Caption">-Eleanor Roosevelt</div>
+</div>
+<div class="Slide">
+<h1>"Life is what happens when you're busy making other plans."</h1>
+<div class="Caption">-John Lennon</div>
+</div>
+<a class="prevBtn">❮</a>
+<a class="nextBtn">❯</a>
+</div>
+<br />
+<div style="text-align:center">
+<span class="Navdot" onclick="currentSlide(1)"></span>
+<span class="Navdot" onclick="currentSlide(2)"></span>
+<span class="Navdot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+   document.querySelector(".prevBtn").addEventListener("click", () => {
+      changeSlides(-1);
+   });
+   document.querySelector(".nextBtn").addEventListener("click", () => {
+      changeSlides(1);
+   });
+   var slideIndex = 1;
+   showSlides(slideIndex);
+   function changeSlides(n) {
+      showSlides((slideIndex += n));
+   }
+   function currentSlide(n) {
+      showSlides((slideIndex = n));
+   }
+   function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("Slide");
+      var dots = document.getElementsByClassName("Navdot");
+      if (n > slides.length) {
+         slideIndex = 1;
+      }
+      if (n < 1) {
+         slideIndex = slides.length;
+      }
+      Array.from(slides).forEach(item => (item.style.display = "none"));
+      Array.from(dots).forEach(
+         item => (item.className = item.className.replace(" selected", ""))
+      );
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " selected";
+   }
+</script>
 </body>
 </html>
 								</header>
