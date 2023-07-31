@@ -1,27 +1,27 @@
 VERSION="2.2.1"
 
 ACCOUNTS=[
-"GDOW7IFVKXJFT4VHYOLXSTLIGJTYPGOON25RI3ENIWOI5ACWQK46SU6A",
+"GBUQTVHSS5IRRLNY3SNXUPGF7QXBKO4S7FKGA4VRABABWEB7RIPTUZIE",
 ]
 
 [DOCUMENTATION]
-ORG_NAME="reALPHA"
-ORG_URL="https://realpha.digital/"
-ORG_DESCRIPTION="With reAlpha youâ€™ll be able to buy equity in specific properties kind of like you would buy shares of companies on your favorite investing app."
-ORG_LOGO="https://realpha.digital/logo.png"
-ORG_OFFICIAL_EMAIL="realphastellar@gmail.com"
+ORG_NAME="BeeCoin"
+ORG_URL="https://beecoin.trade/"
+ORG_DESCRIPTION="We are the world's first global project fueled by the carriers of a token represented by a living organism, and this organism consists of one bee, which will be equated to one BEE token."
+ORG_LOGO="https://i.ibb.co/VQqcb2B/1.png"
+ORG_OFFICIAL_EMAIL="beecoininfo@gmail.com"
 
 
 [[CURRENCIES]]
-code="REA"
+code="BEE"
 status="live"
 display_decimals=2
-issuer="GDOW7IFVKXJFT4VHYOLXSTLIGJTYPGOON25RI3ENIWOI5ACWQK46SU6A"
+issuer="GBUQTVHSS5IRRLNY3SNXUPGF7QXBKO4S7FKGA4VRABABWEB7RIPTUZIE"
 anchor_asset_type="crypto"
-name="reALPHA Token"
-desc="Our technology is designed to help break down the barriers to entry kept in place throughout history, keeping you out of the market and giving the â€œbig guysâ€ access to the best investment properties."
-image="https://realpha.digital/logo.png"
-fixed_number=100000000
-max_number=100000000
+name="BEE Coin"
+desc="We are the world's first global project fueled by the carriers of a token represented by a living organism, and this organism consists of one bee, which will be equated to one BEE token."
+image="https://i.ibb.co/VQqcb2B/1.png"
+fixed_number=50000000000
+max_number=50000000000
 is_unlimited=false
-#reALPHA Token was issued using the open and inclusive Stellar blockchain network.
+#BEE Coin Token was issued using the open and inclusive Stellar blockchain network.
